@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,600;10..48,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+:root{
+    --orange: #f94a61;
+    --green: #44cea3;
+    --blue: #0491ca;
+}
+
+body{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 1.3em;
+}
+
+header {
+    background-color: var(--green);
+    color: #fff;
+    text-align: center;
+    /* padding: 20px; */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+ul li{
+    list-style: none;
+}
+
+nav {
+    /* background-color: var(--green); */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.nav-color{
+    font-size: 200px;
+}
+
+nav img{
+    width: 120px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    gap: 0.5em;
+}
+
+nav ul li {
+    display: inline-block;
+    /* margin-right: 20px; */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: var(--blue);
+    transition: all .7s ease;   
+}
+
+.user-sesion{
+    display: flex;
+    margin: 1em;
+    font-size: 0.8em;
+}
+
+.user-sesion a{
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color:var(--blue);
+}
+
+.admin-sesion a{
+    background-color: #03323f;
+}
+
+.menu-admin{
+    background-color: #03323f;
+    font-size: 0.9em;
+}
+
+.menu-usuario{
+    background-color:var(--blue);
+}
+
+.menu-admin li a:hover{
+    background-color:var(--blue);
+    color: white;
+}
+
+.menu-user li a:hover{
+    background-color: #03323f;
+    color: white;
+}
+
+.dropdown-menu li{
+    width: 100%;
+    padding: 0.3em 0;
+}
+
+/** USUARIO LOGUEADO **/
+.user-logueado{
+    display: flex;
+    justify-content: center;
+}
+
+.user-logueado img{
+    width: 10em;
+}
+
+/** PRINCIPAL **/
+/** PRINCIPAL - HERO **/
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero div:first-child{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 1.5em;
+    margin: 2em 0;
+}
+
+.hero p:nth-child(2){
+    font-size: 0.5em;
+}
+
+.hero img{
+    width: 100%;
+}
+
+.hero button{
+    padding: 0.5em;
+    font-size: 0.5em;
+    background-color: var(--orange);
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+
+.hero button:hover {
+    background-color: var(--blue);
+    transition: all .7s ease;   
+}
+
+section {
+    padding: 20px; /* espaciado para la sección de 20 pixeles */
+}
+
+.title-section{
+    color:var(--orange);
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #03323f;
+}
+
+/** PRINCIPAL - DESTINOS **/
+.card-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.card-section p{
+    text-align: center;
+}
+
+.card{
+    width: 18em;
+    /* height: 23em; */
+}
+
+.card img{
+    width: 100%;
+    height: 10em;
+    object-fit: cover;
+    object-position:top;
+}
+
+.card:hover{
+    background-color:#ecced2;
+    transition: all .7s ease; 
+}
+
+.card_destino{
+    display: flex;
+    gap: 0.5em;
+}
+
+.card_description{
+    margin-bottom: 1em;
+    padding: 1em;
+    text-align: justify;
+    min-height: 10em;
+    background-color: rgb(244, 242, 242);
+    border-radius: 8px;
+    /* text-justify: inter-word; */
+}
+
+.card_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_footer p{
+    margin-bottom: 0;
+}
+
+.card_button{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5em;
+    background-color: black;
+    color: white;
+}
+
+.card_button:hover{
+    background-color: var(--blue);
+    color: white;
+}
+
+/** PRINCIPAL - NEWSLETTER **/
+.newsletter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#f0c9ce;
+    margin: 1em 0;
+}
+
+.newsletter p{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.newsletter input{
+    padding: 0 0.5em;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.newsletter_button{
+    background-color: var(--orange);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 0.1em 1em;
+}
+
+.newsletter_button:hover{
+    background-color: var(--blue);
+}
+
+/** PRINCIPAL - GALERIA **/
+.carousel img{
+    width: 100%;
+    height: 20em;
+    object-fit: contain;
+    /* object-fit: cover; */
+    /* object-position:top; */
+}
+
+/** REGISTRARSE Y ACCESO **/
+.login-section{
+    min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register, 
+.login{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 0 8em;
+    margin: 0 auto;
+}
+
+.register_forgotpass a{
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.register_forgotpass a:hover{
+    color: var(--orange);
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin: 2em 0;
+}
+
+.btns button{
+    padding: 0.8em;
+}
+
+.form{
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: #256986;
+    padding: 2em;
+}
+
+.form input,
+.form textarea{
+    outline: none;
+    padding: 0.2em;
+}
+
+.form button{
+    background-color: #03323f;
+    height: 2em;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form button:hover{
+    background-color: #0491ca;
+}
+
+/** QUIENES SOMOS **/
+.quienessomos{
+    display: flex;
+    flex-direction: column;
+}
+
+.quienessomos p{
+    margin-bottom: 2em;
+}
+
+.quienessomos_destacado, .acercade_destacado{
+    color: var(--orange);
+}
+
+.quienessomos h2, .registrarse h2, .acercade h2{
+    text-align: center;
+    margin: 2em 0;
+}
+
+.quienessomos p{
+    text-align: justify;
+}
+
+.quienessomos_servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.quienessomos_servicios div{
+    width: 20em;
+    padding: 2em;
+    /* background-color: red; */
+}
+
+.quienessomos_servicios i{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.quienessomos_servicios h3{
+    text-align: center;
+}
+
+.quienessomos_servicios p{
+    text-align: justify;
+}
+
+.quienessomos_card-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2em 0;
+}
+
+.quienessomos_card{
+    width: 18em;
+    padding: 1em;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.quienessomos_card:hover{
+    background-color:rgba(0, 0, 0, 0.8);
+    color: white;
+    transition: all .7s ease;   
+}
+
+.quienessomos_redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.quienessomos_redes a i{
+    color: var(--orange);
+    font-size: 1em;
+}
+
+.quienessomos_redes i:hover{
+    color: white;
+}
+
+/** ACERCA DE **/
+.acercade_contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2em 0;
+}
+
+.acercade_ubicacion{
+    width: 20em;
+}
+
+.acercade_ubicacion h3{
+    text-align: center;
+}
+
+.acercade_ubicacion iframe{
+    width: 100%;
+    height: 300px; 
+}
+
+.acercade iframe{
+    margin: 1em 0;
+}
+
+.acercade_direccion, .acercade_telefono{
+    display: flex;
+    gap: 1em;
+}
+
+.acercade_telefono a{
+    color: black;
+    text-decoration: none;
+}
+
+.acercade_telefono a:hover{
+    color: var(--orange);
+}
+
+/* Slider */
+.slider-frame {
+	width: 80%;
+    height: auto;
+	margin: 2em auto;
+	overflow: hidden;
+    background-color: rgba(249, 74, 97, 0.1);
+    border-radius: 8px;
+}
+
+.slider-frame ul {
+	display: flex;
+	width: 600%;
+	animation: slide 40s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	14% {margin-left: 0;}
+	
+	17% {margin-left: -100%;}
+	31% {margin-left: -100%;}
+	
+	33% {margin-left: -200%;}
+	47% {margin-left: -200%;}
+	
+	50% {margin-left: -300%;}
+	64% {margin-left: -300%;}
+
+    67% {margin-left: -400%;}
+	81% {margin-left: -400%;}
+
+    84% {margin-left: -500%;}
+	100% {margin-left: -500%;}
+}
+
+.cardCustomer__profile{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.cardCustomer__profile>img{
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.slider-frame>ul>li{
+    width: 100%;
+    padding: 2em;
+}
+
+/** FOOTER **/
+
+footer {
+    background-color: var(--green);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer img{
+    width: 200px;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin: 1.5em 0;
+}
+
+footer div div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer p a{
+    color: white;
+    text-decoration: none;
+}
+
+footer h3{
+    color: black;
+    border-bottom: 1px solid black;
+    /* font-weight: bold; */
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: var(--orange);
+}
+
+.footer-content {
+    max-width: 800px; /* Ancho máximo del contenido del footer */
+    margin: 0 auto; /* Centrar el contenido del footer horizontalmente */
+    text-align: center; 
+}
+
+/**** Media Queries ****/
+@media screen and (max-width: 1175px) {
+    .navbar-collapse{
+        align-items: center;
+        gap: 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown-menu{
+        font-size: 0.8em;
+    }
+
+    .newsletter{
+        flex-direction: column;
+    }
+
+    .quienessomos_card-group{
+        gap: 2em;
+    }
+
+    .slider-frame {
+        width: 100%;
+        height: 15em;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        font-size: 1em;
+    }
+
+    .hero img{
+        display: none;
+    }
+
+    footer img{
+        display: none;
+    }
+
+    .card_button{
+        padding: 0.2em;
+    }
+
+    .register, .login{
+        padding: 0;
+    }
+
+    .btns button{
+        padding: 0.4em;
+    }
+}
