@@ -20,12 +20,6 @@ Destiny Travel es una empresa de viajes apasionada por ofrecer experiencias emoc
 </p>
 <br>
 
-## DER 
-<p align="center">
-    <img src="" width= 800/>
-</p>
-<br>
-
 ## Colaboradores
 | [<img src="https://avatars.githubusercontent.com/u/74721434?s=96&v=4" width=50><br><sub>Mansilla, Cristian</sub>](https://github.com/CristianMansilla) |  [<img src="https://avatars.githubusercontent.co/u/74721434?s=96&v=4" width=50><br><sub>Martínez, Mauricio</sub>](https://github.com/CristianMansill) |  [<img src="https://avatars.githubusercontent.co/u/74721434?s=96&v=4" width=50><br><sub>Ojeda, María</sub>](https://github.com/CristianMansill)
 | :---: | :---: | :---: |
@@ -33,10 +27,6 @@ Destiny Travel es una empresa de viajes apasionada por ofrecer experiencias emoc
 ---
 <h2>Gracias por visitar nuestro proyecto!</h2>
 
-<!-- ![Thanks](https://i.gifer.com/378.mp4) -->
-
-<p align="center">
-  <img src="https://i.gifer.com/378.mp4" width=250><br>
-</p>
+![Thanks](https://i.gifer.com/378.mp4)
 
 ---
